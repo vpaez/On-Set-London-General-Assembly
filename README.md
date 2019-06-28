@@ -156,7 +156,6 @@ handleSubmit(e) {
 }
 ```
 
-This process was one of our biggest challenges during the project.
 
 #### Scrolling the Location Index and map focus
 
@@ -177,6 +176,19 @@ We decided that having a good mobile experience was particularly important for t
 Media queries are used to adjust the experience.
 
 ![image](https://user-images.githubusercontent.com/40695746/57921117-80a06900-7894-11e9-9342-bc50e9122d93.png)
+
+#### Wins
+
+The single application layout with the map as a center point allowed us to implement and explore single page application features, like scrolling an element into view, pop ups and toggle side bars.
+My main takeaway from this project was learning how to work with single page applications, and how that affects the design of the components. 
+
+#### Challenges
+
+One of our biggest challenges during the project was the Add New Location form. In the back end, the location and film were separate models, and the location model included the film as referenced data. Because of the way our back end was set up, to create a new location, the front end had to make two separate requests, one to create or retrieve a film from the database and a second one to create a new location with the film as reference. This meant that the form, had to make two requests and organize the data inputted by the user to match the requirements to make a request.
+
+
+
+
 
 ### Future enhancements
 * Adding a lookup to the film database OMDB to populate new film images and film information.
